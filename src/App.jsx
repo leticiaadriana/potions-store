@@ -1,4 +1,5 @@
 import Home from "./pages/HomePage.jsx"
+import History from "./pages/HistoryPage.jsx"
 import Header from "./components/header"
 
 function App () {
@@ -9,6 +10,8 @@ function App () {
         <div style={appStyle}>
             <Header/>
             <Home/>
+            <Header/>
+            <History/>
         </div>
     );
 }
