@@ -1,4 +1,5 @@
 import Home from "./pages/HomePage.jsx"
+import Buy from "./pages/BuyPage.jsx"
 import History from "./pages/HistoryPage.jsx"
 import Header from "./components/header"
 
@@ -12,6 +13,8 @@ function App () {
             <Home/>
             <Header/>
             <History/>
+            <Header/>
+            <Buy/>
         </div>
     );
 }
