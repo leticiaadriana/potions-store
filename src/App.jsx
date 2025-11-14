@@ -2,6 +2,7 @@ import Home from "./pages/HomePage.jsx"
 import Buy from "./pages/BuyPage.jsx"
 import History from "./pages/HistoryPage.jsx"
 import Header from "./components/header"
+import Footer from "./components/footer"
 
 function App () {
     const appStyle = {
@@ -15,6 +16,7 @@ function App () {
             <History/>
             <Header/>
             <Buy/>
+            <Footer/>
         </div>
     );
 }
