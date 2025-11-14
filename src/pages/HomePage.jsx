@@ -1,15 +1,13 @@
 import Banner from '../components/banner'
 import HomeGrid from '../components/cardsGrid'
+import History from '../components/history'
 
 function HomePage () {
-    const homeStyle = {
-
-    }
-    
     return (
         <>
             <Banner/>
             <HomeGrid/>
+            <History/>
 
         </>
     );

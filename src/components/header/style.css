@@ -32,3 +32,33 @@ nav a {
 nav a:hover {
   color: #93E1D3; 
 }
+
+@media (max-width: 900px) {
+  nav {
+    gap: 50px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    gap: 25px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  nav {
+    gap: 20px;
+  }
+  header {
+    padding: 20px 0;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}

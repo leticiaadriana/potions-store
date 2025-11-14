@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .Grid {
     background: linear-gradient(180deg, #0C152B 0%, #141F37 40%, #133146 70%, #1f4e70 100%);
@@ -13,6 +8,7 @@
     width: 55%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 60px;
     padding: 50px 90px;
     font-family: 'Playfair Display', serif;
     font-size: 25px;

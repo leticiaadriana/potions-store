@@ -5,7 +5,7 @@ function Card ({image, name, price}) {
             borderColor: '#FFFFFF',
             boxShadow: '0 0 15px #eeeeeeff',
             width: '250px',
-            padding: '30px, 20px',
+            padding: '30px, 50px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -29,15 +29,15 @@ function Card ({image, name, price}) {
                 src={image}
                 alt={name}
                 style={{
-                width: "150px",
-                height: "150px",
+                width: "100px",
+                height: "100px",
                 objectFit: "contain", 
                 marginBottom: "20px",
                 marginTop: '20px',
     }}
 />
-            <h3>{name}</h3>
-            <p style={{ color: '#93E1D3' , fontSize: '18px', marginBottom: '20px', marginTop:'8px' }}>${price.toFixed(2)}</p>
+            <h3 style={{marginLeft:'10px', marginRight:'10px'}}>{name}</h3>
+            <p style={{ color: '#93E1D3' , fontSize: '18px', marginBottom: '20px', marginTop:'8px'}}>${price.toFixed(2)}</p>
         </div>
     );
 }

@@ -22,7 +22,7 @@ function HomeGrid (){
                 price={3000}
             />
             </div>
-            <button href='\comprar'>Compre conosco!</button>
+                <button>Compre conosco!</button>
         </div>    
     );
 }

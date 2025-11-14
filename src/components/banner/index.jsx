@@ -7,11 +7,18 @@ function Banner () {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        width: '100%',
+        padding: '20px 0'
+    }
+
+     const imgStyle = {
+        maxWidth: '100%',
+        height: 'auto'
     }
 
     return (
         <div style={bannerStyle}>
-            <img src={imgBanner} alt="banner"></img>
+            <img src={imgBanner} alt="banner" style={imgStyle}></img>
         </div>
     );
 }
