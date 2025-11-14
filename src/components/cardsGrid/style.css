@@ -2,27 +2,27 @@
 
 
 .Grid {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px 40px;
+    border-radius: 20px;
+
     background: linear-gradient(180deg, #0C152B 0%, #141F37 40%, #133146 70%, #1f4e70 100%);
-    border-color: white;
     box-shadow: 0 0 50px rgb(0, 0, 0);
-    width: 55%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 60px;
-    padding: 50px 90px;
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    color: #FFFFFF;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif;
 }
 
-.card{
-    display: flex;
-    flex-direction: row;
-    gap: 8%;
-    font-size: 18px;
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    width: 100%;
 }
+
 
 button {
     background: #004C8D;

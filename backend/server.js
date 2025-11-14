@@ -8,9 +8,9 @@ const PORT = 5001;
 app.use(cors());
 app.use(express.json());
 
-const sequelize = new Sequelize()({
-    dialect: 'sqlite',
-    storage: 'memory',
+const sequelize = new Sequelize({
+    dialect: "sqlite",
+    storage: ":memory:",
     logging: false,
 });
 
@@ -25,39 +25,39 @@ const Pocao = sequelize.define('Pocao', {
 
 const pocoes = [
      {
-    nome: '🧪 Poção Blue Sky',
+    nome: '🧪 Poção cuzinho preto',
     descricao: 'Essa poção provê um surto de inspiração por 24 horas. Foi utilizada por John Lennon quando escreveu Lucy in the Sky with Diamonds.',
-    imagem: 'https://images.unsplash.com/photo-1614854262340-ab1ca7d079c7?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 300,
   },
   {
     nome: '🌸 Poção do Perfume Misterioso',
     descricao: 'Essa poção faz com que você fique cheirando lilás e groselha por 24 dias. Essência muito admirada pelos bruxos.',
-    imagem: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 200,
   },
   {
     nome: '🌲 Poção de Pinus',
     descricao: 'Essa poção faz com que você fique 10 cm mais alto!',
-    imagem: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 3000,
   },
   {
     nome: '💀 Poção da Beleza Eterna',
     descricao: 'Veneno que mata rápido.',
-    imagem: 'https://images.unsplash.com/photo-1518176258769-f227c798150e?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 100,
   },
   {
     nome: '🌈 Poção do Arco Íris',
     descricao: 'Traz felicidade momentânea. Pode durar de 10 minutos a 2 dias.',
-    imagem: 'https://images.unsplash.com/photo-1595838216085-5a5c3e5ec5d0?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 120,
   },
   {
     nome: '🔮 Caldeirão das Verdades Secretas',
     descricao: 'As pessoas lhe dirão apenas verdades por 1 hora. É necessário beber os 5L.',
-    imagem: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=400',
+    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
     preco: 150,
   },
 ];
@@ -129,7 +129,7 @@ app.delete('/api/pocoes/:id', async(req, res) => {
     }
 });
 
-initDatabase().then(() => {
+initDB().then(() => {
     app.listen(PORT, () => {
         console.log(`Servidor rodando na porta ${PORT}`);
         console.log(`Api disponível em http://localhost:${PORT}/api/pocoes`);
