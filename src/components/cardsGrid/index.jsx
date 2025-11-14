@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import Card from '../cards';
 import './style.css'
 
@@ -22,7 +23,9 @@ function HomeGrid (){
                 price={3000}
             />
             </div>
-                <button>Compre conosco!</button>
+                <Link to="/buy">
+                    <button>Compre conosco!</button>
+                </Link>
         </div>    
     );
 }

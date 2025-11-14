@@ -1,14 +1,14 @@
 import './style.css'
+import {Link} from "react-router-dom"
 
 function Header (){
     return (
         <>
         <header className="Header">
             <nav>
-                <a href="/">Página incial</a>
-                <a href="/Buy">Comprar</a>
-                <a href="/About">Sobre</a>
-                <a href="/Contact">Contato</a>
+                <Link to="/">Página Inicial</Link>
+                <Link to="/buy">Comprar</Link>
+                <Link to="/about">Sobre</Link>
             </nav>
         </header>
         </>
