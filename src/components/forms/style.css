@@ -26,6 +26,7 @@ form {
     width: 320px;
     gap: 12px; 
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 form label {
@@ -41,7 +42,7 @@ form input {
 }
 
 .button {
-    margin: 20px auto 0 auto; 
+    margin: 10px auto 0 auto;
     padding: 12px 24px;
     border-radius: 25px;
     font-size: 18px;
