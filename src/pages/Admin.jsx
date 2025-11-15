@@ -1,14 +1,15 @@
 import Banner from '../components/banner'
-import Advantages from '../components/advantages'
-import HomeGrid from '../components/cardsGrid'
-import History from '../components/history'
 import Forms from '../components/forms'
+import DeleteForms from '../components/deleteForms'
+import Panel from '../components/panel'
 
 function Admin () {
     return (
         <>
             <Banner/>
             <Forms></Forms>
+            <DeleteForms></DeleteForms>
+            <Panel></Panel>
         </>
     );
 }
