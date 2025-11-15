@@ -32,6 +32,7 @@ function Forms() {
 
             const data = await response.json();
             alert("Poção cadastrada com sucesso!");
+            window.location.reload();
             console.log(data);
 
         

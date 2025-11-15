@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './style.css';
+import "./style.css";
 
 function DeleteForms() {
   const [id, setID] = useState("");
@@ -16,6 +16,8 @@ function DeleteForms() {
       const data = await response.json();
       alert("Poção deletada com sucesso!");
       console.log(data);
+      window.location.reload();
+
       setID("");
     } catch (error) {
       console.error(error);
@@ -35,9 +37,7 @@ function DeleteForms() {
           placeholder="Digite o ID da poção"
           required
         />
-        <button type="submit">
-          Deletar
-        </button>
+        <button type="submit">Deletar</button>
       </form>
     </div>
   );
