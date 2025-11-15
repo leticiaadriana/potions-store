@@ -4,6 +4,7 @@ import Footer from "./components/footer"
 import Home from "./pages/HomePage.jsx"
 import Buy from "./pages/BuyPage.jsx"
 import History from "./pages/HistoryPage.jsx"
+import Admin from "./pages/Admin.jsx"
 
 function App () {
     const appStyle = {
@@ -18,6 +19,7 @@ function App () {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<History/>}/>
                     <Route path="/buy" element={<Buy/>} />
+                    <Route path="/admin" element={<Admin/>} />
                 </Routes>
 
                 <Footer/>

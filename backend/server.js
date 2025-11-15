@@ -23,44 +23,6 @@ const Pocao = sequelize.define('Pocao', {
 });
 
 
-const pocoes = [
-     {
-    nome: '🧪 Poção cuzinho preto',
-    descricao: 'Essa poção provê um surto de inspiração por 24 horas. Foi utilizada por John Lennon quando escreveu Lucy in the Sky with Diamonds.',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 300,
-  },
-  {
-    nome: '🌸 Poção do Perfume Misterioso',
-    descricao: 'Essa poção faz com que você fique cheirando lilás e groselha por 24 dias. Essência muito admirada pelos bruxos.',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 200,
-  },
-  {
-    nome: '🌲 Poção de Pinus',
-    descricao: 'Essa poção faz com que você fique 10 cm mais alto!',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 3000,
-  },
-  {
-    nome: '💀 Poção da Beleza Eterna',
-    descricao: 'Veneno que mata rápido.',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 100,
-  },
-  {
-    nome: '🌈 Poção do Arco Íris',
-    descricao: 'Traz felicidade momentânea. Pode durar de 10 minutos a 2 dias.',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 120,
-  },
-  {
-    nome: '🔮 Caldeirão das Verdades Secretas',
-    descricao: 'As pessoas lhe dirão apenas verdades por 1 hora. É necessário beber os 5L.',
-    imagem: 'https://i.ibb.co/pyhZJXf/rsz-lilas.png',
-    preco: 150,
-  },
-];
 
 async function initDB(){
     try {
@@ -71,6 +33,7 @@ async function initDB(){
         console.error('Erro ao inicializar banco de dados: ', error);
     }
 }
+
 
 
 
@@ -96,6 +59,8 @@ app.get('/api/pocoes/:id', async(req, res) => {
     }
 });
 
+
+
 app.post('/api/pocoes', async(req, res) => {
     try {
         const {nome, descricao, imagem, preco} = req.body;
@@ -120,7 +85,7 @@ app.delete('/api/pocoes/:id', async(req, res) => {
         const pocao = await Pocao.findByPk(req.params.id);
 
         // TODO tratar erro
-
+        
 
         await pocao.destroy();
         res.json({message: 'Poção removida com sucesso'});
