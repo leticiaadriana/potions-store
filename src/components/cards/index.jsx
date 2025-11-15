@@ -56,38 +56,32 @@ function Card({ image, name, price }) {
 }
 
 function CardList() {
-  console.log('🎨 CARDLIST FOI RENDERIZADO!');
   
   const [pocoes, setPocoes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
 
   useEffect(() => {
-    console.log('🚀 USEEFFECT EXECUTANDO!');
-    console.log('📍 Fazendo fetch para: http://localhost:5001/api/pocoes');
+    console.log('fetch para: http://localhost:5001/api/pocoes');
     
     fetch('http://localhost:5001/api/pocoes')
       .then((res) => {
-        console.log('📡 RESPOSTA:', res.status, res.ok);
+        console.log('resposta:', res.status, res.ok);
         if (!res.ok) {
           throw new Error('Erro ao buscar poções');
         }
         return res.json();
       })
       .then((data) => {
-        console.log('✅ DADOS RECEBIDOS:', data);
-        console.log('📊 Total de poções:', data.length);
         setPocoes(data);
         setLoading(false);
       })
       .catch((err) => {
-        console.error('❌ ERRO CAPTURADO:', err);
         setErro(err.message);
         setLoading(false);
       });
   }, []);
 
-  console.log('📦 Estado atual - loading:', loading, 'erro:', erro, 'poções:', pocoes.length);
 
   if (loading) {
     return (

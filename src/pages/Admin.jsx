@@ -2,14 +2,17 @@ import Banner from '../components/banner'
 import Forms from '../components/forms'
 import DeleteForms from '../components/deleteForms'
 import Panel from '../components/panel'
-
+import "./layout.css"
 function Admin () {
     return (
         <>
             <Banner/>
-            <Forms></Forms>
-            <DeleteForms></DeleteForms>
-            <Panel></Panel>
+            <div className="forms-container">
+                <Forms/>
+                <DeleteForms/>
+                
+            </div>
+            <Panel/>
         </>
     );
 }

@@ -1,41 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-.forms{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.forms {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
-    padding: 15px 0;
-    margin-bottom: 5px;
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-style: bold;
-    color:#FFFFFF;
-    margin-top: 50px;
-    gap: 30px;
+    color: white;
+    text-align: center;
 }
 
-form{
-    gap: 10px;
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 12px; 
+    margin-top: 20px;
 }
 
-label{
-    font-size: 20px;
-    font-style: bold;
-    text-align: justify;
-    gap: 18px;
-}
-
-input{
-    color: black;
-    font-size: 15px;
-    border-radius: 20px;
-}
-
-.button{
-    margin-bottom: 15px;
+form label {
     margin-top: 8px;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.button {
+    margin: 20px auto 0 auto; 
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #d8d8d8;
 }

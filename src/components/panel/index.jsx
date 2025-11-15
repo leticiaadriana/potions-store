@@ -111,6 +111,8 @@ function Panel() {
   return (
     <div className='Grid'>
       
+    <h3>Painel de poções</h3>
+
       <div className='card'>
         {pocoes.map((pocao) => (
           <Card
@@ -120,6 +122,7 @@ function Panel() {
             price={pocao.preco}
           />
         ))}
+
       </div>
     </div>
   );
