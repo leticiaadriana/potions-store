@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-style: bold;
+    color:#FFFFFF;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+form{
+    gap: 10px;
+}
+
+label{
+    font-size: 20px;
+    font-style: bold;
+    text-align: justify;
+    gap: 18px;
+}
+
+input{
+    color: black;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.button{
+    margin-bottom: 15px;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}

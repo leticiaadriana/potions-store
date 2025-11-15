@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './style.css'
 
 function Forms() {
     const [nome, setNome] = useState("");
@@ -46,7 +47,7 @@ function Forms() {
     }
 
     return (
-        <>
+        <div className='forms'>
             <h2>Cadastrar nova poção</h2>
 
             <form onSubmit={handleSubmit} style={{display: "flex", flexDirection: "column", width: "300px"}}>
@@ -84,9 +85,9 @@ function Forms() {
                     required
                 />
 
-                <button type="submit" style={{marginTop: "15px"}}>Cadastrar</button>
+                <button type="submit" className='button'>Cadastrar</button>
             </form>
-        </>
+        </div>
     );
 }
 
